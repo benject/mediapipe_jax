@@ -177,11 +177,11 @@ if (__name__ == '__main__'):
         image_path = gen_featureset.df.loc[idx,'image_path'] # get the image path
         lm = gen_featureset.get_landmarks(image_path) # get the landmarks
         gen_featureset.draw_landmarks(image_path , lm) #draw the landmarks
-    #drawlandmark()
+    drawlandmark()
 
 
     # generate the featureset
-
+    '''
     df = gen_featureset.merge_blink_feature()
     gen_featureset.write_csv( df , "./src/mirror/dataset/featureset.csv")
 
@@ -194,4 +194,5 @@ if (__name__ == '__main__'):
 
     plt.scatter(df.loc[:,"area"],df.loc[:,"eyeblink"])
     plt.show()
+    '''
 
